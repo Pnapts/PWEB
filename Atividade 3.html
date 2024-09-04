@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre Arquitetura de Software">
+    <meta name="keywords" content="Arquitetura, UML,ADL">
+    <meta name="author" content="Pedro Napoleão">
+    <title>Arquitetura de Software</title>
+    <link rel="stylesheet" href="Atividade 3.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Arquitetura de Software</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#linguagem">Linguagem ADL</a></li>
+                <li><a href="#estilos">Estilos Arquitetura</a></li>
+                <li><a href="#padroes">Padrões de Arquitetura</a></li>
+            </ul>
+        </nav>
+        <section>
+        <h2 id="introducao">Introdução</h2>
+        <article>
+            <p>
+                A  <abbr title="arquitetura">Arquitetura de Software</abbr> 
+                A arquitetura de software define o planejamento de toda a <em>estrutura modular do software</em>, atuando de forma análoga a uma planta baixa de uma construção, detalhando como os blocos operacionais serão construídos, as etapas dessa construção e como se interligam entre si.
+As etapas de planejamento são definidas após a etapa de levantamento de requisitos e antes do design, e necessita de um alto nível de abstração, ou seja, a arquitetura deve prever o funcionamento dos componentes do sistema porem sem se preocupar (nesse momento) com detalhes da implementação, contemplar atributos necessários de eficiência, confiabilidade, reusabilidade e portabilidade.
+
+            </p>
+        </article>
+        <section>
+            <h2 id="linguagem">Linguagem ADL</h2>
+            <p>
+                São as linguagens utilizadas para descrever a arquitetura de um software, Architecture description language (ADL), que possuem um conjunto de regras e protocolos para a criação de diagramas de fluxo, tabelas organizacionais e outras formas de visualização que possam ser necessárias para descrever o modelo a ser construído.
+                <figure>
+                    <img src="ImagemADL.jpg" title="ADL" alt="Modelo ADL">
+                    <figcaption><small>Figura 1: Metamodelo ADL</small>
+                    </figcaption>
+                </figure>
+                Uma ADL deve possuir como pré-requisitos de usabilidade:
+            </p>
+            <ol>
+                <li>Ser compatível para a comunicação entre todas as partes interessadas.</li>
+                <li>Suportar as tarefas de criação da arquitetura, refinamento e validação.</li>
+                <li>Fornece a base para a futura implementação, ou seja, deve permitir a inserção de informações e especificações das quais as especificações do sistema vão derivar.</li>
+                <li>Suportar funcionalidades analíticas que permitam a geração de protótipos da implementação. </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 id="exemplos">Exemplos</h2>
+            <p>
+                <mark>Exemplos de Linguagem</mark> :
+            </p>
+            <ul>
+                <li>UML</li>
+                <li>ABACUS</li>
+                <li>UNICON</li>
+            </ul>
+        </section>
+        <h2 id="estilos">Estilos de Arquitetura</h2>
+        <article>
+            <p>
+                Os estilos de  <abbr title="arquitetura">Arquitetura de Software</abbr> 
+                 possuem peculiaridades de forma que sua escolha define como os componentes do sistema serão representados e visualizados num nível mais alto de abstração, permitindo que seja possível prever como as camadas ou módulos do software iram se comunicar, identificando suas responsabilidades.
+                 Dentre os principais estilos podemos citar cinco grandes grupos: 
+            </p>
+            <ul>
+                <li><strong> Structure</strong>(layered, pipes and filters, component-based)</li>
+                <li><strong> Shared memory </strong>(role-based, blackboard, database-centric)</li>
+                <li><strong> Messaging styles </strong>(Implicit invocation, asynchronous messaging, publish-subscribe)</li>
+                <li><strong> Adaptive systems </strong>(microkernel style, reflection, domain-specific language) </li>
+                <li><strong> Distributed systems </strong>(service-oriented, peer to peer style, object request broker, cloud computing)</li>
+                <li><strong> Deployment</strong>(client-server, n-tier)</li>
+            </ul>
+            <p>
+                Cada estilo contempla a resolução de classes de problemas especificas, ou seja, não existe uma única solução para todos os problemas e a competência do arquiteto de software passa pela identificação dos problemas, escolha das conceções e definição do melhor estilo a ser empregado.
+            </p>
+        </article>
+        
+        <h2 id="padroes">Padrões de Arquitetura</h2>
+        <article>
+            <p>
+                Os Padrões de <abbr title="arquitetura">Arquitetura </abbr> 
+                têm por objetivo definir soluções reutilizáveis para problemas recorrentes de forma conceitual e flexível, de forma que dentro de um mesmo projeto vários padrões podem ser utilizados.
+                Os padrões arquiteturais mais conhecidos são:
+            </p>
+            <ol>
+                <li>Model-View-Controller (MVC)</li>
+                <li>Microkernel</li>
+                <li>Three-tier</li>
+                <li>Event-driven (EDA)</li>
+                <li>Message Broker</li>
+                <li>CQRS (Command and Query Responsibility Segregation)</li>
+                
+            </ol>
+
+            <aside>
+                <h2>Referencias</h2>
+                <p>&nbsp;<a href="https://medium.com/sicreditech/arquitetura-de-software-estilos-e-padr%C3%B5es-de-design-50d62d684ef2">Medium</a></p>
+                <p>&ensp;<a href="https://cio-wiki.org/wiki/Architecture_Description_Language_(ADL)">CIO-Wiki</a></p>
+                <p>&emsp;<a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">Wikipedia</a></p>
+            </aside>
+        </article>
+        
+    </section>
+    </main>
+</body>
+</html>
