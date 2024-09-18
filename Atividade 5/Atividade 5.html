@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV com Media Queries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <div id="colorDiv">
+        <h2 id="colorText">Cor Atual</h2>
+    </div>
+
+    <script>
+              function updateColorText() {
+            const colorDiv = document.getElementById('colorDiv');
+            const colorText = document.getElementById('colorText');
+            
+            const style = window.getComputedStyle(colorDiv);
+            const backgroundColor = style.backgroundColor;
+            
+            switch (backgroundColor) {
+                case 'rgb(128, 128, 128)': 
+                    colorText.innerText = 'Cinza';
+                    break;
+                case 'rgb(255, 165, 0)': 
+                    colorText.innerText = 'Laranja';
+                    break;
+                case 'rgb(255, 192, 203)':
+                    colorText.innerText = 'Rosa';
+                    break;
+                case 'rgb(255, 0, 0)':
+                    colorText.innerText = 'Vermelho';
+                    break;
+                case 'rgb(0, 0, 255)': 
+                    colorText.innerText = 'Azul';
+                    break;
+                case 'rgb(255, 255, 0)': 
+                    colorText.innerText = 'Amarelo';
+                    break;
+                case 'rgb(0, 128, 0)': 
+                    colorText.innerText = 'Verde';
+                    break;
+                default:
+                    colorText.innerText = 'Cor Desconhecida';
+            }
+        }
+        window.onload = updateColorText;
+        window.onresize = updateColorText;
+    </script>
+
+</body>
+</html>

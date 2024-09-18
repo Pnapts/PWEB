@@ -1,0 +1,54 @@
+
+#colorDiv {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+@media (max-width: 420px) {
+    #colorDiv {
+        background-color: gray;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    #colorDiv {
+        background-color: orange;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #colorDiv {
+        background-color: pink;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    #colorDiv {
+        background-color: red;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    #colorDiv {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    #colorDiv {
+        background-color: yellow;
+        color: black; 
+    }
+}
+
+
+@media (min-width: 1921px) {
+    #colorDiv {
+        background-color: green;
+    }
+}
