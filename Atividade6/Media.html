@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+
+ <script>
+        function media() {
+
+                      
+            var Aluno = prompt("Digite seu nome");
+            var n1 =parseFloat(prompt("Insira sua nota 1")) ;
+            var n2 = parseFloat(prompt("Insira sua nota 2")) ;
+            var n3 = parseFloat(prompt("Insira sua nota 3")) ;
+            var n4 =parseFloat(prompt("Insira sua nota 4")) ;
+           
+            var media = (n1 + n2 + n3 + n4) / 4
+            alert("Aluno: " + Aluno + "\nMédia: " + media.toFixed(2));
+        }
+    </script>    
+<body onload="media()">
+
+</body >
+</html >

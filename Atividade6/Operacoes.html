@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operacoes</title>
+</head>
+<script>
+    function Operacao() {
+
+                  
+        
+        var n1 = parseFloat(prompt("Insira o primeiro numero")) ;
+        var n2 = parseFloat(prompt("Insira o segundo numero")) ;
+        
+    
+        var soma = n1+n2
+        var sub = n1-n2
+        var prod = n1*n2
+        var div = n1/n2
+        var rest = n1%n2
+
+        alert("   soma "  +  soma.toFixed(2)      +  "   Sub  "  +  sub.toFixed(2) +  "   prod  " + prod.toFixed(2) + 
+        "  div  " +  div.toFixed(2)  +  "  rest  " +  rest.toFixed(2));
+    }
+</script>    
+<body onload="Operacao()">
+
+</body >
+</html >
