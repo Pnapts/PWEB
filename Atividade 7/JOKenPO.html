@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokenPo</title>
+    <script>
+       function jogar(){
+        var jogador = parseInt(prompt("Escolha sua jogada: 1- Pedra, 2- Papel ou 3- Tesoura"));
+        var computador = Math.floor((Math.random() * 3) + 1);
+        var resultado = '';
+       
+        switch (jogador) {
+        
+            case computador:
+            resultado = `Empate! Ambos escolheram ${playerChoice}.`;
+            break;
+
+        case '1':
+            switch (computerChoice) {
+                case '2':
+                    resultado = `   _______            	  _______
+---'   ____)         ____(____   '----
+      (_____)       (______
+      (_____)       (_______
+      (____)         (_______
+---.__(___)           (_________.---`;
+                    break;
+                case '3':
+                    resultado = `   _______                 ____
+---'   ____)          ____(___ '-----
+      (_____)        (________)
+      (_____)       (_________)
+      (____)             (____)
+---.__(___)               (___)__.---`;
+                    break;
+
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
