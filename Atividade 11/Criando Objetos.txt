@@ -1,0 +1,33 @@
+Literal
+
+const Funcionario1 = {
+    Matricula: 12345,
+    Nome: "João Silva",
+    Funcao: "Desenvolvedor"
+};
+
+Dot Notation
+
+const Funcionario1 = {}; 
+Funcionario1.Matricula = 12345;
+Funcionario1.Nome = "João Silva";
+Funcionario1.Funcao = "Desenvolvedor";
+
+Object.create()
+
+const FuncionarioBase = {
+    Matricula: null,
+    Nome: null,
+    Funcao: null
+};
+
+
+const Funcionario1 = Object.create(FuncionarioBase);
+
+
+Funcionario1.Matricula = 67890;
+Funcionario1.Nome = "Maria Souza";
+Funcionario1.Funcao = "Analista";
+
+
+
