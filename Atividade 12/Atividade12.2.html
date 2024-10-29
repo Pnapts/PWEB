@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade12.2</title>
+</head>
+<body>
+    <script>
+        class Conta {
+            constructor(nome, banco, numconta, saldo) {
+                this._nome = nome;
+                this._banco = banco;
+                this._numconta = numconta;
+                this._saldo = saldo;
+            }
+
+            get nome() {
+                return this._nome;
+            }
+
+            get banco() {
+                return this._banco;
+            }
+
+            get numconta() {
+                return this._numconta;
+            }
+
+            get saldo() {
+                return this._saldo;
+            }
+
+            set nome(nome) {
+                this._nome = nome;
+            }
+
+            set banco(banco) {
+                this._banco = banco;
+            }
+
+            set numconta(numconta) {
+                this._numconta = numconta;
+            }
+
+            set saldo(saldo) {
+                this._saldo = saldo;
+            }
+        }
+
+        class Corrente extends Conta {
+            constructor(nome, banco, numconta, saldo, saldospecial) {
+                super(nome, banco, numconta, saldo);
+                this._saldospecial = saldospecial;
+            }
+
+            get saldospecial() {
+                return this._saldospecial;
+            }
+
+            set saldospecial(saldospecial) {
+                this._saldospecial = saldospecial;
+            }
+        }
+
+        class Poupanca extends Conta {
+            constructor(nome, banco, numconta, saldo, juros, vencimento) {
+                super(nome, banco, numconta, saldo);
+                this._juros = juros;
+                this._vencimento = vencimento;
+            }
+
+            get juros() {
+                return this._juros;
+            }
+
+            get vencimento() {
+                return this._vencimento;
+            }
+
+            set juros(juros) {
+                this._juros = juros;
+            }
+
+            set vencimento(vencimento) {
+                this._vencimento = vencimento;
+            }
+        }
+
+        
+        const nomeCorrente = prompt("Digite o nome do titular da conta corrente:");
+        const bancoCorrente = prompt("Digite o nome do banco da conta corrente:");
+        const numContaCorrente = prompt("Digite o número da conta corrente:");
+        const saldoCorrente = parseFloat(prompt("Digite o saldo da conta corrente:"));
+        const saldoEspecial = parseFloat(prompt("Digite o saldo especial da conta corrente:"));
+
+        const nomePoupanca = prompt("Digite o nome do titular da conta poupança:");
+        const bancoPoupanca = prompt("Digite o nome do banco da conta poupança:");
+        const numContaPoupanca = prompt("Digite o número da conta poupança:");
+        const saldoPoupanca = parseFloat(prompt("Digite o saldo da conta poupança:"));
+        const juros = parseFloat(prompt("Digite a taxa de juros da conta poupança:"));
+        const vencimento = prompt("Digite a data de vencimento da conta poupança:");
+
+        
+        const contaCorrente = new Corrente(nomeCorrente, bancoCorrente, numContaCorrente, saldoCorrente, saldoEspecial);
+        const contaPoupanca = new Poupanca(nomePoupanca, bancoPoupanca, numContaPoupanca, saldoPoupanca, juros, vencimento);
+
+        
+        alert(`Conta Corrente: Nome: ${contaCorrente.nome}, Banco: ${contaCorrente.banco}, Número: ${contaCorrente.numconta}, Saldo: ${contaCorrente.saldo}, Saldo Especial: ${contaCorrente.saldospecial}`);
+        alert(`Conta Poupança: Nome: ${contaPoupanca.nome}, Banco: ${contaPoupanca.banco}, Número: ${contaPoupanca.numconta}, Saldo: ${contaPoupanca.saldo}, Juros: ${contaPoupanca.juros}, Vencimento: ${contaPoupanca.vencimento}`);
+    </script>
+</body>
+</html>
